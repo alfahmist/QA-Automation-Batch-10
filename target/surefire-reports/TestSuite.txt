@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 41.892 s <<< FAILURE! - in TestSuite
+setUp(Tugas3.BaseTest)  Time elapsed: 41.51 s  <<< FAILURE!
+io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 103.0.5060.53 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at Tugas3.BaseTest.setUp(BaseTest.java:18)
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 103.0.5060.53 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at Tugas3.BaseTest.setUp(BaseTest.java:18)
+
