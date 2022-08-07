@@ -170,6 +170,7 @@ void printError(String message) {
 
 ### Tugas 3
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 4
 
