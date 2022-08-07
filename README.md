@@ -219,6 +219,8 @@ https://user-images.githubusercontent.com/48145002/183294083-9c84f900-967d-4002-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 5
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ### Tugas 6
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ### Tugas 7
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
