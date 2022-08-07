@@ -1,4 +1,4 @@
-# QA-Automation-Batch-10
+# Repo QA-Automation-Batch-10
 Repositori ini dibuat untuk menyimpan tugas - tugas dari kelas QA Automation Batch 10 Jakarta Labs
 
 ## Tugas 1 TreeSet/TreeMap
