@@ -170,6 +170,72 @@ void printError(String message) {
 
 ### Tugas 3
 
+1. Go to yopmail.com
+2. Input automationtest as email
+3. Use switch iframe to get inbox content
+4. Syso content of inbox
+
+Pada tugas 3 diutamakan bagaimana cara untuk pindah iframe dari inbox ke mail.
+
+
+![image](https://user-images.githubusercontent.com/48145002/183460142-79502342-b647-4170-a7c1-17234c43cb7e.png)
+
+Flownya ketika sudah input username seperti ini
+
+![image](https://user-images.githubusercontent.com/48145002/183459351-1d14fff0-a716-4c7e-b87e-6e4d90318b42.png)
+
+
+
+* Lokasi
+```
+tugas3
+ ├──tugas3.pages
+ │  ├── BasePage.java    # Basic function (click, setText, getText)
+ │  ├── InboxPage.java   # handle InboxPage (mailPage ,findMail, findText)
+ │  ├── LoginPage.java   # Handle LoginPage input username (Login)
+ ├──tugas3.test 
+    ├── BaseTest.java   # congfiguration (Webdriver, BeforeTest and AfterTest)
+    ├── YopmMailTest.java  # main test
+```
+
+* Potongan Code
+```
+int pageNum = 3; // page keberapa ?
+String username = "automationtest";
+By mailID = By.xpath("//div[@id='e_ZwVjBQN3ZGpmZGH2ZQNjZmRkAmZ2ZD==']");
+By mailTextID = By.xpath("//div[@id='mail']");
+
+
+@Test
+public void findMailTest() {
+  // TODO Auto-generated method stub
+  LoginPage loginPage = new LoginPage(driver);
+  InboxPage InboxPage = new InboxPage(driver);
+
+  loginPage.login(username);
+  InboxPage.mailPage(pageNum);
+  InboxPage.findMail(mailID);
+
+  String actualText =	InboxPage.findText(mailTextID);
+  String expectedText = "test automation";
+
+  Assert.assertTrue((actualText).contains(expectedText));
+  System.out.println(actualText);
+
+  //		automationyopyop
+  //		alt.nl-boh0w97y@yopmail.com
+  // 		sendemail@yopmail.com
+  // 		alt.sm-7opp81st@yopmail.com
+	}
+  
+```
+
+* Output
+
+
+https://user-images.githubusercontent.com/48145002/183455201-8ba1ec02-2e12-4c3d-badd-e58b9b850ae2.mp4
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 4
